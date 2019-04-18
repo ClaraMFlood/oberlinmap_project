@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="css/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+	</head>
+    <body>
+
+    <div class="tableholder">
+       <p><strong>Click the headers to sort the table.</strong></p>
+        <p>The first time you click, the sorting direction is ascending (A to Z).</p>
+        <p>Click again, and the sorting direction will be descending (Z to A):</p>
+        
+        <table id="myTable">
+          <tr>
+           <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+            
+            <th>Number</th>
+            <th>Name</th>
+            <th>Archive Link</th>
+            <th>Grid Location</th>
+          </tr>
+          <tr>
+            <td>155</td>
+            <td>Mudd</td>
+              <td><a href="#">Link Here</a></td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>89</td>
+            <td>Peters</td>
+            <td><a href="#">Link Here</a></td>
+            <td>A6</td>
+          </tr>
+          <tr>
+            <td>96</td>
+            <td>Carnegie</td>
+            <td><a href="#">Link Here</a></td>
+            <td>C1</td>
+          </tr>
+          <tr>
+            <td>120</td>
+            <td>Hales</td>
+            <td><a href="#">Link Here</a></td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>160</td>
+            <td>Stevenson</td>
+            <td><a href="#">Link Here</a></td>
+            <td>F2</td>
+          </tr>
+          <tr>
+            <td>168</td>
+            <td>Science Center</td>
+            <td><a href="#">Link Here</a></td>
+            <td>A1</td>
+          </tr>
+          <tr>
+            <td>105</td>
+            <td>Wilder</td>
+            <td><a href="#">Link Here</a></td>
+            <td>C3</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tappan</td>
+            <td><a href="#">Link Here</a></td>
+            <td>A8</td>
+          </tr>
+        </table>
+    </div>
+
+    <div class="mapwrapper">
+        <h4>Map of Oberlin</h4>
+        <div id="viewport2">
+            <div style="background: url(images/Obie2018_Vectors_11_ochre_small01.png) no-repeat; width: 1694px; height: 1798px;">
+                <!--top level map content goes here-->
+            </div>
+            <div style="height: 3104px; width: 2926px;">
+                <img src="images/Obie2018_Vectors_11_ochre_small4.png" alt="" />
+                <div class="mapcontent">
+                    <!--map content goes here-->
+                </div>
+            </div>
+            <div style="height: 4430px; width: 4175px;">
+                <img src="images/Obie2018_Vectors_11_ochre_small3.png" alt="" />
+                 <div class="mapcontent">
+                    <!--map content goes here-->
+                </div>
+            </div>
+            <div style="height: 6290px; width: 5928px;">
+                <img src="images/Obie2018_Vectors_11_ochre_small2.png" alt="" />
+                 <div class="mapcontent">
+                    <!--map content goes here-->
+                </div>
+            </div>
+            <div style="height: 8140px; width: 7678px;">
+                <img src="images/Obie2018_Vectors_11_ochre_small1.png" alt="" />
+                 <div class="mapcontent">
+                    <!--map content goes here-->
+                </div>
+            </div>
+            <div style="height: 10550px; width: 9943px;">
+                <img src="images/Obie2018_Vectors_11_ochre_small.png" alt="" />
+                 <div class="mapcontent">
+                    <!--map content goes here-->
+                </div>
+            </div>
+        </div>
+        <div class="map-control" style="background: url(images/map-control.png) no-repeat;">
+            <a href="#left" class="left">Left</a>
+            <a href="#right" class="right">Right</a>
+            <a href="#up" class="up">Up</a>
+            <a href="#down" class="down">Down</a>
+            <a href="#zoom" class="zoom">Zoom</a>
+            <a href="#zoom_out" class="back">Back</a>
+        </div>
+    </div>
+        
+        <div class="legend"><img class="legendimg" src="images/legend.png" /></div>
+    
+        
+
+    
+
+        <!--put your external script links here-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/mousewheel2.js"></script>
+        <script type="text/javascript" src="lib/wheelzoom.js"></script>
+        <script type="text/javascript" src="lib/mapbox.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        
+    </body>
+</html>

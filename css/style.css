@@ -1,0 +1,119 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.legendimg {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.legend {
+    width: 70vw;
+    
+}
+
+.tableholder {
+    float: right;
+    width: 28vw;
+    height: 80vh;
+    background-color: gainsboro;
+    margin-top: 60px;
+    margin-right: 5px;
+    overflow: auto;
+}
+
+
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+    cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.mapwrapper {
+  margin: 0px auto;
+  width: 70vw;
+    float: left;
+}
+
+#viewport2 {
+    width: 70vw;
+    height: 80vh;
+    cursor: move;
+    overflow: hidden;
+}
+
+.mapwrapper {
+    position: relative;
+}
+
+.map-control {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    height: 63px;
+    width: 100px;
+}
+
+.map-control a {
+    height: 18px;
+    width: 18px;
+    display: block;
+    text-indent: -999em;
+    position: absolute;
+    outline: none;
+}
+
+.map-control a:hover {
+    background: #535353;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+
+.map-control a.left {
+    left: 39px;
+    top: 22px;
+}
+
+.map-control a.right {
+    left: 79px;
+    top: 22px;
+}
+
+.map-control a.up {
+    left: 59px;
+    top: 2px;
+}
+
+.map-control a.down {
+    left: 59px;
+    top: 42px;
+}
+
+.map-control a.zoom {
+    left: 2px;
+    top: 8px;
+    height: 21px;
+    width: 21px;
+}
+
+.map-control a.back {
+    left: 2px;
+    top: 31px;
+    height: 21px;
+    width: 21px;
+}
